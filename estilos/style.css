@@ -1,0 +1,44 @@
+@charset "UTF-8"
+
+* {
+    margin: 0px; /*deixou sem margem na tela e sem padding*/
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100vh; /*altura total da tela*/
+    width: 100vw; /*larguraa total d tela*/
+    background-color: rgb(17, 13, 7);
+}
+
+body {
+    background: url('../imagens/fundo-madeira.jpg') no-repeat top center;
+    background-size: cover; /*backgroud size cover deixa a imagem do tamanho da tela*/
+    background-attachment: fixed;
+}
+
+main {
+    height: 100vh;
+    position: relative; /*tem que ter posicionamento relativo, para colocar no meio da tela a imagem da section, que tera posicionamento absolute*/
+    
+}
+
+section#telefone {
+    position: absolute;
+    top: 50%; /*para a imagem ficar no meio da tela de cima para baixo, e left da esquerda para direita*/
+    left: 50%;
+    transform: translate(-50%, -50%);/*isso é para começar o meio no meio da imagem, se nao começaria no canto superior esquerdo*/
+
+    height: 627px;
+    width: 311px;
+    background: url('../imagens/frame-iphone.png') no-repeat;
+}
+
+iframe#tela {
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 269px;
+    height: 471px;
+}
