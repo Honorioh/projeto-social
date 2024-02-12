@@ -7,8 +7,8 @@
 }
 
 html, body {
-    height: 100vh; /*altura total da tela*/
-    width: 100vw; /*larguraa total d tela*/
+    height: 98vh; /*altura total da tela*/
+    width: 99vw; /*larguraa total d tela*/
     background-color: rgb(17, 13, 7);
 }
 
@@ -19,7 +19,7 @@ body {
 }
 
 main {
-    height: 100vh;
+    height: 95vh;
     position: relative; /*tem que ter posicionamento relativo, para colocar no meio da tela a imagem da section, que tera posicionamento absolute*/
     
 }
@@ -41,4 +41,23 @@ iframe#tela {
     left: 22px;
     width: 269px;
     height: 471px;
+}
+
+section#redes-sociais {
+    text-align: right; /*manda as imagens pro lado*/
+}
+
+section#redes-sociais img{
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;/*deixa a borda redonda*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
+    box-sizing: border-box; /*para deixar a borda dentro da caixa, no caso com efeito a borda nao sai da imagem*/
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid white; /*usado para fazer uma borda na imagem no caso, como se fosse um botão*/
+    transform: translate(-4px, -4px); /*usado para deslocar a imagem quando mouse fica em cima levemente, se quiser mais so colocar mais px*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.445);/* nesse caso a box shadow, quando levanta por causa do hover aumenta a sombra*/
+    transition: transform 0.5; /*para quando coloca  mouse em cima da imagem ele se movimentar em meio segundo, a imagem consegue ser vista melhor se mexendo*/
 }
